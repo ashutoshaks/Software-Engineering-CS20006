@@ -1,0 +1,238 @@
+BOOKING SUCCEEDED
+PNR Number = 1
+From Station = Delhi
+To Station = Mumbai
+Travel Date = Thu, 15/Apr/2021
+Travel Class = AC 3 Tier
+  : Mode: Sleeping
+  : Comfort: AC
+  : Bunks: 3
+  : Luxury: No
+Booking Category = General
+Passenger Information : 
+Name: Ashutosh Kumar Singh
+Date Of Birth: Mon, 11/Mar/2002
+Gender: Male
+Aadhaar: 845626586698
+Mobile: 9999888877
+
+Reservation Date = Fri, 9/Apr/2021
+Fare = 1849
+
+
+
+BOOKING SUCCEEDED
+PNR Number = 2
+From Station = Kolkata
+To Station = Mumbai
+Travel Date = Thu, 15/Apr/2021
+Travel Class = Executive Chair Car
+  : Mode: Sitting
+  : Comfort: AC
+  : Bunks: 0
+  : Luxury: Yes
+Booking Category = Ladies
+Passenger Information : 
+Name: Arya Kumari Singh
+Date Of Birth: Sat, 11/Jul/1992
+Gender: Female
+Aadhaar: 745634695243
+Mobile: 9763425843
+
+Reservation Date = Fri, 9/Apr/2021
+Fare = 5095
+
+
+
+BOOKING SUCCEEDED
+PNR Number = 3
+From Station = Bangalore
+To Station = Kolkata
+Travel Date = Thu, 15/Apr/2021
+Travel Class = AC 2 Tier
+  : Mode: Sleeping
+  : Comfort: AC
+  : Bunks: 2
+  : Luxury: No
+Booking Category = Senior Citizen
+Passenger Information : 
+Name: Manku Barnawal
+Date Of Birth: Sat, 11/Mar/1950
+Gender: Male
+Aadhaar: 652147896325
+Mobile: 9874562130
+
+Reservation Date = Fri, 9/Apr/2021
+Fare = 2295
+
+
+
+BOOKING SUCCEEDED
+PNR Number = 4
+From Station = Chennai
+To Station = Bangalore
+Travel Date = Tue, 15/Feb/2022
+Travel Class = First Class
+  : Mode: Sleeping
+  : Comfort: Non-AC
+  : Bunks: 2
+  : Luxury: Yes
+Booking Category = Senior Citizen
+Passenger Information : 
+Name: Vashisth Garg
+Date Of Birth: Sat, 11/Mar/1961
+Gender: Female
+Aadhaar: 100011111111
+Mobile: 9876543210
+
+Reservation Date = Fri, 9/Apr/2021
+Fare = 313
+
+
+
+BOOKING SUCCEEDED
+PNR Number = 5
+From Station = Delhi
+To Station = Mumbai
+Travel Date = Sat, 10/Apr/2021
+Travel Class = Executive Chair Car
+  : Mode: Sitting
+  : Comfort: AC
+  : Bunks: 0
+  : Luxury: Yes
+Booking Category = Tatkal
+Passenger Information : 
+Name: Varun Phogat
+Date Of Birth: Mon, 11/Mar/2002
+Gender: Male
+Aadhaar: 632547896259
+Mobile: 8521479632
+
+Reservation Date = Fri, 9/Apr/2021
+Fare = 4178
+
+
+
+BOOKING SUCCEEDED
+PNR Number = 6
+From Station = Delhi
+To Station = Kolkata
+Travel Date = Sat, 10/Apr/2021
+Travel Class = Executive Chair Car
+  : Mode: Sitting
+  : Comfort: AC
+  : Bunks: 0
+  : Luxury: Yes
+Booking Category = Premium Tatkal
+Passenger Information : 
+Name: Harish Vardhan Mundhra
+Date Of Birth: Mon, 11/Mar/2002
+Gender: Male
+Aadhaar: 100011111111
+Mobile: 8761669365
+Disability Type: Blind
+Disability ID: 0221
+
+Reservation Date = Fri, 9/Apr/2021
+Fare = 4740
+
+
+
+BOOKING SUCCEEDED
+PNR Number = 7
+From Station = Delhi
+To Station = Mumbai
+Travel Date = Thu, 15/Apr/2021
+Travel Class = AC 3 Tier
+  : Mode: Sleeping
+  : Comfort: AC
+  : Bunks: 3
+  : Luxury: No
+Booking Category = Divyaang - Blind
+Passenger Information : 
+Name: Manish Pandey
+Date Of Birth: Mon, 11/Mar/2002
+Gender: Male
+Aadhaar: 100011111111
+Disability Type: Blind
+Disability ID: 012
+
+Reservation Date = Fri, 9/Apr/2021
+Fare = 492
+
+
+
+BOOKING SUCCEEDED
+PNR Number = 8
+From Station = Delhi
+To Station = Mumbai
+Travel Date = Thu, 15/Apr/2021
+Travel Class = AC 3 Tier
+  : Mode: Sleeping
+  : Comfort: AC
+  : Bunks: 3
+  : Luxury: No
+Booking Category = Divyaang - Orthopaedically Handicapped
+Passenger Information : 
+Name: Rakesh Chandra
+Date Of Birth: Mon, 11/Mar/2002
+Gender: Male
+Aadhaar: 100011111111
+Mobile: 7456325896
+Disability Type: Orthopaedically Handicapped
+Disability ID: 007
+
+Reservation Date = Fri, 9/Apr/2021
+Fare = 492
+
+
+
+BOOKING SUCCEEDED
+PNR Number = 9
+From Station = Delhi
+To Station = Mumbai
+Travel Date = Thu, 15/Apr/2021
+Travel Class = AC 3 Tier
+  : Mode: Sleeping
+  : Comfort: AC
+  : Bunks: 3
+  : Luxury: No
+Booking Category = Divyaang - Cancer
+Passenger Information : 
+Name: Laxman Mittal
+Date Of Birth: Mon, 11/Mar/2002
+Gender: Male
+Aadhaar: 100011111111
+Disability Type: Cancer
+Disability ID: 125
+
+Reservation Date = Fri, 9/Apr/2021
+Fare = 40
+
+
+
+BOOKING SUCCEEDED
+PNR Number = 10
+From Station = Delhi
+To Station = Mumbai
+Travel Date = Thu, 15/Apr/2021
+Travel Class = AC 3 Tier
+  : Mode: Sleeping
+  : Comfort: AC
+  : Bunks: 3
+  : Luxury: No
+Booking Category = Divyaang - TB
+Passenger Information : 
+Name: Ishan Chandra Pandey
+Date Of Birth: Mon, 11/Mar/2002
+Gender: Male
+Aadhaar: 100011111111
+Mobile: 6823457896
+Disability Type: TB
+Disability ID: 215
+
+Reservation Date = Fri, 9/Apr/2021
+Fare = 1849
+
+
+

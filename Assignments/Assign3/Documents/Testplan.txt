@@ -1,0 +1,340 @@
+CS20006 Assignment 3
+Testplan.txt
+@author Ashutosh Kumar Singh (19CS30008)
+
+-------------------------------------------------------- UNIT TESTING --------------------------------------------------------
+
+A. Unit Test Plan for class 'Station'
+
+A.1. Testing the provided constructor which takes a string as argument : Station(const string&)
+    - Create an object by passing a string as name
+
+A.2. Testing the copy constructor : Station(const Station&)
+    - Create a Station object by passing another station object as argument
+
+A.3. Testing the GetName() function : string GetName() const
+    - Get the name of a Station object
+
+A.4. Testing the GetDistance(.) function : int GetDistance(const Station&) const
+    - Get the distance to another Station using a Station object
+
+A.5. Testing the output streaming operator : friend ostream& operator<<(ostream&, const Station&)
+    - Print a Station object to the screen
+
+GOLDEN OUTPUTS :
+
+A.1. Kolkata
+
+A.2. Kolkata
+
+A.3. Kolkata
+
+A.4. 1472
+
+A.5. Station : Kolkata
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+B. Unit Test Plan for class 'Railways'
+
+B.1. Testing the constructor : Railways()
+     (automatically done while testing the Type() function)
+    - Create the singleton object
+
+B.2. Testing the Type() function : static const Railways& GetInstance()
+    - Call the function for the first time to get an object
+    - Call the function for a second time and check if it is the same object as the previous one
+      (to ensure that it is a singleton class)
+
+B.3. Testing the GetDistance(., .) function : static int getDistance(const Station&, const Station&)
+    - Get the distance between two Stations
+
+B.4. Testing the output streaming operator : friend ostream& operator<<(ostream&, const Railways&)
+    - Print all the details of the object to the screen
+
+GOLDEN OUTPUTS : 
+
+B.3. 1871
+
+B.4.
+Indian Railways
+
+List of Stations
+Station : Mumbai
+Station : Delhi
+Station : Bangalore
+Station : Kolkata
+Station : Chennai
+
+Pairwise Distances
+Bangalore - Chennai = 350 km
+Bangalore - Delhi = 2150 km
+Bangalore - Kolkata = 1871 km
+Bangalore - Mumbai = 981 km
+Chennai - Delhi = 2180 km
+Chennai - Kolkata = 1659 km
+Chennai - Mumbai = 1338 km
+Delhi - Kolkata = 1472 km
+Delhi - Mumbai = 1447 km
+Kolkata - Mumbai = 2014 km
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+C. Unit Test Plan for class 'Date'
+
+C.1. Testing the provided constructor : Date(int, int, int)
+    - Create a Date object
+
+C.2. Testing the copy constructor : Date(const Date&)
+    - Pass another Date object as argument
+
+C.3. Testing the day() function which gives the day of the week for the given date : Day day() const
+    1. Get the day on a normal date
+    2. Get the day for some 29th February
+
+C.4. Testing the output streaming operator : friend ostream& operator<<(ostream&, const Date&)
+    - Print a Date object to the screen
+
+GOLDEN OUTPUTS : 
+
+C.1. date_ = 7, month_ = Mar, year_ = 2021
+
+C.2. date_ = 7, month_ = Mar, year_ = 2021
+
+C.3.
+1. Sun
+2. Sat
+
+C.4. Sun, 7/Mar/2021
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+D. Unit Test Plan for the 'BookingClasses' hierarchy
+
+The abstract classes are quite simple and can be tested from their derived concrete classes itself.
+Here, we basically have 7 concrete classes that we need to test. These are : 
+- ACFirstClass
+- AC2Tier
+- FirstClass
+- AC3Tier
+- ACChairCar
+- Sleeper
+- SecondSitting
+
+For each of these classes, we need to test the following things (E.1 TO E.8) : 
+
+D.1. Testing the constructor
+     (automatically done while testing the Type() function)
+    - Create the singleton object
+
+D.2. Testing the Type() function
+    - Call the function for the first time to get an object of the respective class
+    - Call the function for a second time and check if it is the same object as the previous one
+      (to ensure that it is a singleton class)
+
+D.3. Testing the GetLoadFactor() function : virtual double GetLoadFactor() const
+    - Call the function from each class and verify the load factor
+
+D.4. Testing the GetName() function : string GetName() const
+    - Call the function from each class and verify the name
+
+D.5. Testing the IsSitting() function : virtual bool IsSitting() const
+    - Call the function from each class and verify if it is sitting or sleeping
+
+D.6. Testing the IsAC() function : bool IsAC() const
+    - Call the function from each class and verify if it is AC or non-AC
+
+D.7. Testing the GetNumberOfTiers() function : virtual int GetNumberOfTiers() const
+    - Call the function from each class and verify the number of tiers
+
+D.8. Testing the IsLuxury() function : bool IsLuxury() const
+    - Call the function from each class and verify if it is luxury or ordinary
+
+D.9. Testing the output streaming operator defined in the class BookingClasses : friend ostream& operator<<(ostream&, const BookingClasses&)
+    - Print the object of each class
+
+GOLDEN OUTPUTS for ACFirstClass : 
+
+D.3. ACFirstClass::Type().GetLoadFactor() = 3.0
+D.4. ACFirstClass::Type().GetName() = "AC First Class"
+D.5. ACFirstClass::Type().IsSitting() = false
+D.6. ACFirstClass::Type().IsAC() = true
+D.7. ACFirstClass::Type().GetNumberOfTiers() = 2
+D.8. ACFirstClass::Type().IsLuxury() = true
+
+D.9.
+Travel Class = AC First Class
+  : Mode: Sleeping
+  : Comfort: AC
+  : Bunks: 2
+  : Luxury: Yes
+
+GOLDEN OUTPUTS for AC2Tier : 
+
+D.3. AC2Tier::Type().GetLoadFactor() = 2.0
+D.4. AC2Tier::Type().GetName() = "AC 2 Tier"
+D.5. AC2Tier::Type().IsSitting() = false
+D.6. AC2Tier::Type().IsAC() = true
+D.7. AC2Tier::Type().GetNumberOfTiers() = 2
+D.8. AC2Tier::Type().IsLuxury() = false
+
+D.9.
+Travel Class = AC 2 Tier
+  : Mode: Sleeping
+  : Comfort: AC
+  : Bunks: 2
+  : Luxury: No
+
+GOLDEN OUTPUTS for FirstClass : 
+
+D.3. FirstClass::Type().GetLoadFactor() = 2.0
+D.4. FirstClass::Type().GetName() = "First Class"
+D.5. FirstClass::Type().IsSitting() = false
+D.6. FirstClass::Type().IsAC() = false
+D.7. FirstClass::Type().GetNumberOfTiers() = 2
+D.8. FirstClass::Type().IsLuxury() = true
+
+D.9.
+Travel Class = First Class
+  : Mode: Sleeping
+  : Comfort: Non-AC
+  : Bunks: 2
+  : Luxury: Yes
+
+GOLDEN OUTPUTS for AC3Tier : 
+
+D.3. AC3Tier::Type().GetLoadFactor() = 1.75
+D.4. AC3Tier::Type().GetName() = "AC 3 Tier"
+D.5. AC3Tier::Type().IsSitting() = false
+D.6. AC3Tier::Type().IsAC() = true
+D.7. AC3Tier::Type().GetNumberOfTiers() = 3
+D.8. AC3Tier::Type().IsLuxury() = false
+
+D.9. 
+Travel Class = AC 3 Tier
+  : Mode: Sleeping
+  : Comfort: AC
+  : Bunks: 3
+  : Luxury: No
+
+GOLDEN OUTPUTS for ACChairCar : 
+
+D.3. ACChairCar::Type().GetLoadFactor() = 1.25
+D.4. ACChairCar::Type().GetName() = "AC Chair Car"
+D.5. ACChairCar::Type().IsSitting() = true
+D.6. ACChairCar::Type().IsAC() = true
+D.7. ACChairCar::Type().GetNumberOfTiers() = 0
+D.8. ACChairCar::Type().IsLuxury() = false
+
+D.9. 
+Travel Class = AC Chair Car
+  : Mode: Sitting
+  : Comfort: AC
+  : Bunks: 0
+  : Luxury: No
+
+GOLDEN OUTPUTS for Sleeper : 
+
+D.3. Sleeper::Type().GetLoadFactor() = 1.0
+D.4. Sleeper::Type().GetName() = "Sleeper"
+D.5. Sleeper::Type().IsSitting() = false
+D.6. Sleeper::Type().IsAC() = false
+D.7. Sleeper::Type().GetNumberOfTiers() = 3
+D.8. Sleeper::Type().IsLuxury() = false
+
+D.9. 
+Travel Class = Sleeper
+  : Mode: Sleeping
+  : Comfort: Non-AC
+  : Bunks: 3
+  : Luxury: No
+
+GOLDEN OUTPUTS for SecondSitting : 
+
+D.3. SecondSitting::Type().GetLoadFactor() = 0.5
+D.4. SecondSitting::Type().GetName() = "Second Sitting"
+D.5. SecondSitting::Type().IsSitting() = true
+D.6. SecondSitting::Type().IsAC() = false
+D.7. SecondSitting::Type().GetNumberOfTiers() = 0
+D.8. SecondSitting::Type().IsLuxury() = false
+
+D.9. 
+Travel Class = Second Sitting
+  : Mode: Sitting
+  : Comfort: Non-AC
+  : Bunks: 0
+  : Luxury: No
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+E. Unit Test Plan for 'Booking'
+
+E.1. Testing the provided constructor for correct working of the default parameters : 
+     Booking(const Station&, const Station&, const Date&, const BookingClasses&, bool = true, const string& = "BOOKING SUCCEEDED", Passenger* = NULL);
+    1. All arguments except bookingStatus_, bookingMessage_ and passenger are provided
+    2. All arguments except bookingMessage_ and passenger are provided
+    3. All arguments except passenger are provided
+      (passenger is always a nullable default)
+
+E.2. Testing the ComputeFare() function : virtual int ComputeFare()
+    1. For a booking with ACFirstClass booking class
+    2. For a booking with AC2Tier booking class
+    3. For a booking with FirstClass booking class
+    4. For a booking with AC3Tier booking class
+    5. For a booking with ACChairCar booking class
+    6. For a booking with Sleeper booking class
+    7. For a booking with SecondSitting booking class
+
+E.3. Testing the output streaming operator : friend ostream& operator<<(ostream&, const Booking&)
+    - Print a Booking object to the screen
+
+GOLDEN OUTPUTS : 
+
+E.1.
+1. fromStation_ = Kolkata, toStation_ = Delhi, bookingClass_,GetName() = AC First Class, bookingStatus_ = true, bookingMessage_ = BOOKING SUCCEEDED, passenger_ = NULL, PNR_ = 1
+2. fromStation_ = Kolkata, toStation_ = Delhi, bookingClass_,GetName() = AC First Class, bookingStatus_ = true, bookingMessage_ = BOOKING SUCCEEDED, passenger_ = NULL, PNR_ = 2
+3. fromStation_ = Kolkata, toStation_ = Delhi, bookingClass_,GetName() = AC First Class, bookingStatus_ = true, bookingMessage_ = BOOKING SUCCEEDED, passenger_ = NULL, PNR_ = 3
+
+E.2.
+1. 2823
+2. 1522
+3. 1840
+4. 1338
+5. 970
+6. 736
+7. 368
+
+E.3.
+BOOKING SUCCEEDED
+PNR Number = 1
+From Station = Kolkata
+To Station = Delhi
+Travel Date = Thu, 11/Mar/2021
+Travel Class = AC First Class
+  : Mode: Sleeping
+  : Comfort: AC
+  : Bunks: 2
+  : Luxury: Yes
+Fare = 2823
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------- APPLICATION TESTING --------------------------------------------------------
+
+1. Initialize the singleton object IndianRailways.
+
+2. Create various Station objects.
+
+3. Obtain distances between various Stations.
+
+3. Create various Date objects.
+
+4. Create various Booking objects corresponding to each BookingClass : 
+    a. ACFirstClass
+    b. AC2Tier
+    c. FirstClass
+    d. AC3Tier
+    e. ACChairCar
+    f. Sleeper
+    g. SecondSitting

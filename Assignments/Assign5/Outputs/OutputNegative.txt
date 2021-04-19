@@ -1,0 +1,33 @@
+Station name is invalid : Dilli
+Could not create Booking
+
+Station name is invalid : Bombay
+Could not create Booking
+
+From Station and To Station are same, which is not possible
+Could not create Booking
+
+Year 2500 is not in the valid range
+Could not create Booking
+
+Same day booking is not allowed
+Date Of Booking should be later than Date of Reservation
+Could not create Booking
+
+Date Of Booking should be within one year of Date of Reservation
+Could not create Booking
+
+For Tatkal or Premium Tatkal, booking should be done 1 day before travel
+Could not create Booking
+
+Not eligible for the given Booking Category : Divyaang - Blind
+Could not create Booking
+
+Not eligible for the given Booking Category : Senior Citizen
+Could not create Booking
+
+Name cannot be completely empty
+Could not create Passenger
+
+Could not create Booking
+
